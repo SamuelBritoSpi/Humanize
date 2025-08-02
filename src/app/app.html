@@ -1,0 +1,26 @@
+
+<div class="formulario">
+  <h2>Humanize - Solicitação de Relatório Trabalho</h2>
+  <form>
+    <label for="nome">Nome (opcional)</label>
+    <input type="text" id="nome" name="nome" placeholder="Deixe em branco se quiser permanecer anônima">
+    
+    <label for="relato">Conte do que precisa no relatório:</label>
+    <textarea id="relato" name="relato" rows="5" placeholder="Descreva" required></textarea>
+
+    <label for="tipo">Tipo de apoio desejado:</label>
+    <select id="tipo" name="tipo" required>
+      <option value="psicologico">Apoio psicológico</option>
+      <option value="juridico">Orientação jurídica</option>
+      <option value="conversa">Conversa com alguém da empresa</option>
+      <option value="denuncia-180">Denúncia para 180</option>
+      <option value="outro">Outro</option>
+    </select>
+
+    <label for="contato">Deseja que a empresa entre em contato? (e-mail ou telefone)</label>
+    <input type="text" id="contato" name="contato" placeholder="Opcional">
+
+    <button type="submit">Enviar</button>
+  </form>
+  <a class="exit-link" href="https://www.youtube.com">Sair rapidamente</a>
+</div>
