@@ -1,21 +1,9 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap');
 *{
   --cor-01:#F299B1;
   --cor-02:#F2A7BB;
   --cor-03:#BF046B;
   --cor-04:#CDC1D9;
   --cor-05:#212126;
-}
-header {
-  background-color: var(--cor-01);
-  color:var(--cor-01);
-  padding: 10px;
-  width: 80dvw;
-  margin: 0 auto;
-  border-radius: 5px;
-}
-nav {
-  text-align: right;
-  font-family: ;
-  padding: 5px;
-  
 }
