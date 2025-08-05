@@ -33,5 +33,5 @@ jobs:
           port: 22          
           source: "dist/humanize/*"
           target: "/www/wwwroot/Samuel/Humanize"
-          rm: true;
-          overwrite: true;
+          rm: true
+          overwrite: true
