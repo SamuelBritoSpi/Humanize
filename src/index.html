@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8">
-  <title>Humanize</title>
+  <title>Bru - Humanize</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -32,10 +32,10 @@
             <div class="hidden sm:ml-6 sm:block">
               <div class="flex space-x-4">
                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                <a href="#" aria-current="page" class="rounded-md bg-pink-700 px-3 py-2 text-sm font-medium text-white">Home</a>
-                <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-pink-700 hover:text-white">Contato</a>
-                <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-pink-700 hover:text-white">Informativos</a>
-                <a href="" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-pink-700 hover:text-white">About</a>
+                <a href="/home" aria-current="page" class="rounded-md bg-pink-700 px-3 py-2 text-sm font-medium text-white">Home</a>
+                <a href="/contatos" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-pink-700 hover:text-white">Contato</a>
+                <a href="/informativos" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-pink-700 hover:text-white">Informativos</a>
+                <a  href="/about" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-pink-700 hover:text-white">About</a>
               </div>
             </div>
           </div>
@@ -69,15 +69,17 @@
       <el-disclosure id="mobile-menu" hidden class="block sm:hidden">
         <div class="space-y-1 px-2 pt-2 pb-3">
           <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-          <a href="#" aria-current="page" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white">Home</a>
-          <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contato</a>
-          <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Informativos</a>
-          <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">About</a>
+          <a href="/home" aria-current="page" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white">Home</a>
+          <a href="/contatos" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contato</a>
+          <a href="/informativos" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Informativos</a>
+          <a href="/about" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">About</a>
         </div>
       </el-disclosure>
     </nav>
   </header>
 <app-root></app-root>
 <script src="https://cdn.tailwindcss.com"></script>
+
+
 </body>
 </html>
