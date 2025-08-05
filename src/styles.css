@@ -6,3 +6,7 @@
   --cor-04:#CDC1D9;
   --cor-05:#212126;
 }
+h1{
+  font-size: 2rem;
+  color: var(--color-red-600);
+}
