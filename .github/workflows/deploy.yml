@@ -33,4 +33,4 @@ jobs:
 
       - name: 🚀 Deploy via rsync (Ignora .user.ini)
         run: |
-          rsync -avz --no-times --delete --exclude='.user.ini' dist/humanize/ ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }}:/www/wwwroot/Samuel/Humanize/
+          rsync -avz --no-times --no-perms --delete --exclude='.user.ini' dist/humanize/ ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }}:/www/wwwroot/Samuel/Humanize/
