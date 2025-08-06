@@ -1,4 +1,12 @@
 @import "tailwindcss";
+
+/* Previne FOUC */
+.critical-styles {
+  opacity: 1 !important;
+  transition: opacity 0.1s;
+}
+
+/* Resto dos estilos existentes */
 *{
   --cor-01:#F299B1;
   --cor-02:#F2A7BB;

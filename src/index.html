@@ -6,9 +6,19 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Estilos críticos inline para evitar FOUC -->
+  <style>
+    .critical-styles {
+      visibility: hidden;
+    }
+    .js .critical-styles {
+      visibility: visible;
+    }
+  </style>
 </head>
-<body>
-  <header>
+<body class="bg-pink-50">
+  <header class="critical-styles">
     <nav class="bg-pink-500">
       <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div class="relative flex h-16 items-center justify-between">
@@ -27,7 +37,7 @@
           </div>
           <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div class="flex shrink-0 items-center">
-              <img src="assets/images/Plataforma_Nerd.png" alt="Plataforma Nerd" class="h-11 w-auto" />
+              <a href="/home"><img src="assets/images/violencia-domestica.png" alt="Plataforma Nerd diz não a violência doméstica" class="h-11 w-auto" /></a>
             </div>
             <div class="hidden sm:ml-6 sm:block">
               <div class="flex space-x-4">
@@ -77,9 +87,10 @@
       </el-disclosure>
     </nav>
   </header>
-<app-root></app-root>
-<script src="https://cdn.tailwindcss.com"></script>
-
-
+  <app-root></app-root>
+  <script>
+    // Adiciona classe js ao HTML assim que o JavaScript carregar
+    document.documentElement.classList.add('js');
+  </script>
 </body>
 </html>
